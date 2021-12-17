@@ -1,0 +1,118 @@
+@media(min-width: 1200px) {
+  .page-wrapper {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: auto;
+  }
+}
+@media(min-width: 768px) {
+  input {
+    &[type="text"] {
+      max-width: 400px;
+    }
+  }
+  button {
+    margin-right: 10px;
+  }
+
+}
+@media(max-width: 767px) {
+  button {
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto!important;
+  }
+}
+@media(max-width: 1199px) {
+  .page-wrapper {
+      max-width: 1000px;
+      padding: 0 15px;
+      margin: auto;
+  }
+}
+body {
+  color: 1.6rem;
+}
+.table {
+  table {
+    width: 100%;
+    font-size: 1.4em;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-collapse: collapse;
+    thead  {
+      tr {
+        background-color: #009879;
+        color: #ffffff;
+        text-align: left;
+      }
+    }
+    tr {
+      cursor: pointer;
+      &:hover, &.changeBackground {
+        background: red;
+        color: #fff;
+        font-weight: 700;
+      }
+    }
+    th, td {
+      padding: 12px 15px;
+      border: 1px solid black;
+  }
+
+  }
+
+} 
+button {
+  padding: 15px;
+  background: cadetblue;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.search {
+  display: none;
+  &.search-results {
+    display: block;
+    padding: 25px;
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    left: 0;
+    max-width: 600px;
+    right: 0;
+    margin: auto;
+    box-shadow: 0 0 20px rgb(0 0 0 / 15%);
+    > div {
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      } 
+    }
+}
+input {
+  &[type="text"] {
+    width: 100%;
+    display: block;
+    padding: 25px;
+    border-radius: 5px;
+    background-color: #eee;
+    border: none;
+    margin: 25px auto 0;
+    font-size: 1.4rem;
+    &:focus-visible, &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+}
+.pagenumber {
+  padding: 12px 15px;
+  color: red;
+}
